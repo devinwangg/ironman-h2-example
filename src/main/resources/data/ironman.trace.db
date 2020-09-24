@@ -1,0 +1,6 @@
+2020-09-24 17:35:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO Student (id, name, email) VALUES (1, 'Devin', 'test1@gmail.com'), (2, 'Jack', 'test2@gmail.com'), (3, 'Eric', 'test3@gmail.com') [42102-200]
+2020-09-24 17:35:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TBL_EMPLOYEES" already exists; SQL statement:
+CREATE TABLE TBL_EMPLOYEES ( id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(50) NOT NULL, email VARCHAR(100) DEFAULT NULL ) [42101-200]
