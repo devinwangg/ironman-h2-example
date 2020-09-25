@@ -28,6 +28,9 @@ class HomeController(@Autowired environment: Environment) {
     private final val password = environment.getProperty("spring.datasource.password");
     val connection: Connection = DriverManager.getConnection(url, username, password)
 
+    /**
+     * 取得 Student 所有資料
+     */
     @GetMapping("/students")
     fun getStudentData(): ArrayList<MutableMap<String, Any>> {
         // 建立 Statement 進行資料庫操作
